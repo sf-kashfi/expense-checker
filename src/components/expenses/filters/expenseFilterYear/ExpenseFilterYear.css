@@ -1,0 +1,10 @@
+.ExpenseFilterYear{
+    display: block;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #6D597A;
+}

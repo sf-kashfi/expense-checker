@@ -1,0 +1,53 @@
+.Expense{
+    background-color: #355070;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Expense_right{
+    margin-right: 1rem;
+}
+
+.Expense_left{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Expense_date{
+    line-height: 1px;
+    text-indent: 8px;
+    margin-bottom: 0;
+}
+
+.Expense_ctgy{
+    line-height: 1px;
+    text-indent: 8px;
+    margin-top: 0;
+}
+
+.Expense_title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Expense_icon{
+    color: #355070;
+    font-size: larger;
+}
+
+.Expense_icons{
+    background-color: #EAAC8B;
+    border: 5px solid #EAAC8B;
+    border-radius: 18px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 15px;
+}

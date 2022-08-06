@@ -1,0 +1,21 @@
+.Expenses{
+  padding: 0;
+  background-color: #EAAC8B ;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 90%;
+  height: 650px;
+  overflow-y: scroll;
+  
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Expenses::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.Expenses {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

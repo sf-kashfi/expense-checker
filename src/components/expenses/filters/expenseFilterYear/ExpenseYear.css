@@ -1,0 +1,5 @@
+.ExpenseYear{
+    display: inline-block;
+    width: 20%;
+    transition: .3s;
+}
