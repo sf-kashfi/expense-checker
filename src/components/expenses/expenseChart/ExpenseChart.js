@@ -1,18 +1,33 @@
 
-import React, { Component } from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import Item from './Item';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import React from 'react';
+import Chart from './chart/Chart';
 import './ExpenseChart.css';
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 22, 44, 55, 66, 77];
+
 
 function ExpenseChart(props) {
+    const chartDataPoints = [
+        { label: 'Jan', value: 0 },
+        { label: 'Feb', value: 0 },
+        { label: 'Mar', value: 0 },
+        { label: 'Apr', value: 0 },
+        { label: 'May', value: 0 },
+        { label: 'Jun', value: 0 },
+        { label: 'Jul', value: 0 },
+        { label: 'Aug', value: 0 },
+        { label: 'Sep', value: 0 },
+        { label: 'Oct', value: 0 },
+        { label: 'Nov', value: 0 },
+        { label: 'Dec', value: 0 },
+    ];
+
+    for (const expense of props.expenses) {
+        const expenseMonth = expense.date.getMonth();
+        chartDataPoints[expenseMonth].value += expense.amount;
+    }
+
     return (
-        <OwlCarousel items={5} className='owl-theme'>
-            {arr.map((ctgy) => <Item num={ctgy} />)}
-        </OwlCarousel>
+        <Chart dataPoints={chartDataPoints}></Chart>
     );
 }
 

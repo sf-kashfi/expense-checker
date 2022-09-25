@@ -15,7 +15,7 @@ function Categories(props) {
     });
 
     const [expense, setExpense] = useState(props.expenses);
-    if (props.expenses != expense) {
+    if (props.expenses !== expense) {
         setExpensesArray({
             activeCtgy1: 0,
             sumOfExpenses1: [],
